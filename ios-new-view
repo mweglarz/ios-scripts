@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied"
+else 
+    mkdir $1
+    cd $1
+    mkdir "Logic"
+    mkdir "View"
+
+    echo "Please drag $1 to your xcode project structure"
+fi
